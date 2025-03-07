@@ -3,11 +3,13 @@ package seleniumhq.tests;
 import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import seleniumhq.steps.RepositorySteps;
 
 @ExtendWith(SerenityJUnit5Extension.class)
+@Tag("github")
 public class RepositoryTest {
     @Steps
     RepositorySteps repoSteps;
